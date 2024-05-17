@@ -17,8 +17,8 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildFeatures {
-    viewBinding= true
-}
+        viewBinding = true
+    }
 
     buildTypes {
         release {
@@ -71,6 +71,4 @@ dependencies {
 
     // Browser for showing Captcha
     implementation("androidx.browser:browser:1.5.0")
-
-
 }
