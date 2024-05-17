@@ -1,5 +1,9 @@
 plugins {
     id("com.android.application")
+<<<<<<< HEAD
+=======
+    id("com.google.gms.google-services")
+>>>>>>> b4c00cbf72a16c513b1ecf81249068ef6ad90259
 }
 
 android {
@@ -16,8 +20,13 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildFeatures {
+<<<<<<< HEAD
         viewBinding= true
     }
+=======
+    this.viewBinding= true
+}
+>>>>>>> b4c00cbf72a16c513b1ecf81249068ef6ad90259
 
     buildTypes {
         release {
@@ -32,6 +41,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b4c00cbf72a16c513b1ecf81249068ef6ad90259
 }
 
 dependencies {
@@ -63,4 +76,9 @@ dependencies {
 
     // Browser for showing Captcha
     implementation("androidx.browser:browser:1.5.0")
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b4c00cbf72a16c513b1ecf81249068ef6ad90259
 }

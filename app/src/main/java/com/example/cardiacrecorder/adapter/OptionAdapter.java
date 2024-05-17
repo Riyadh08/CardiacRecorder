@@ -19,7 +19,10 @@ public class OptionAdapter extends RecyclerView.Adapter<OptionAdapter.ViewHolder
 
     private final Context mContext;
     private final ArrayList<String> options;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b4c00cbf72a16c513b1ecf81249068ef6ad90259
     private int selectedPosition = -1;
 
     public OptionAdapter(@NonNull Context mContext, String ...args) {
