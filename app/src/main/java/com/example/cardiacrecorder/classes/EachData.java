@@ -1,13 +1,10 @@
 package com.example.cardiacrecorder.classes;
 
-<<<<<<< HEAD
 import static com.example.cardiacrecorder.viewmodel.FilterViewModel.ALL;
 import static com.example.cardiacrecorder.viewmodel.FilterViewModel.HIGH;
 import static com.example.cardiacrecorder.viewmodel.FilterViewModel.LOW;
 import static com.example.cardiacrecorder.viewmodel.FilterViewModel.NORMAL;
 
-=======
->>>>>>> 4a3ace9a436cc201b70bb6a6169e1bbe0281b806
 import android.text.SpannableString;
 import android.text.style.AbsoluteSizeSpan;
 
