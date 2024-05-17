@@ -83,8 +83,11 @@ public class UiTest {
 
         onView(withId(R.id.editTextDysPressure)).perform(ViewActions.typeText(DYS));
 
+        Espresso.pressBack(); //hide keyboard
+
         onView(withId(R.id.editTextHeartRate)).perform(ViewActions.typeText(HEART));
 
+        Espresso.pressBack(); //hide keyboard
         onView(withId(R.id.editTextComment)).perform(ViewActions.typeText(COMMENT));
 
         Espresso.pressBack(); //hide keyboard
@@ -124,19 +127,22 @@ public class UiTest {
     public void editData(){
 
         onView(withId(R.id.rvList))
-                .perform(RecyclerViewActions.actionOnItemAtPosition(0,MyViewAction.clickChildViewWithId(R.id.ivMore)));
+                .perform(RecyclerViewActions.actionOnItemAtPosition(0, MyViewAction.clickChildViewWithId(R.id.ivMore)));
 
         onView(withText("Edit")).inRoot(isPlatformPopup()).perform(click());
 
         onView(withId(R.id.editTextSysPressure)).perform(clearText());
         onView(withId(R.id.editTextSysPressure)).perform(ViewActions.typeText(SYS_NEW));
 
+        Espresso.pressBack(); //hide keyboard
         onView(withId(R.id.editTextDysPressure)).perform(clearText());
         onView(withId(R.id.editTextDysPressure)).perform(ViewActions.typeText(DYS_NEW));
 
+        Espresso.pressBack(); //hide keyboard
         onView(withId(R.id.editTextHeartRate)).perform(clearText());
         onView(withId(R.id.editTextHeartRate)).perform(ViewActions.typeText(HEART_NEW));
 
+        Espresso.pressBack(); //hide keyboard
         onView(withId(R.id.editTextComment)).perform(clearText());
         onView(withId(R.id.editTextComment)).perform(ViewActions.typeText(COMMENT_NEW));
 

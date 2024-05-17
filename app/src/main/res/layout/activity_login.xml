@@ -9,6 +9,15 @@
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center_horizontal"
+        app:lottie_rawRes="@raw/love_heart"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
